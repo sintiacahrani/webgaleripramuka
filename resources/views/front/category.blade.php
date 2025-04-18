@@ -122,7 +122,7 @@
 					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
 						<div
 							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">{{$post->category->judull}}</p>
+							<p class="text-xs leading-[18px] font-bold">{{$post->category->judul}}</p>
 						</div>
 						<img src="" alt="{{storage::url($post->thumbnail) }}" alt="thumbnail photo"
 							class="object-cover w-full h-full" />

@@ -44,7 +44,7 @@ class FrontController extends Controller
         ->get();
 
         return view('front.index',
-        compact('categories','authors', 'entertainment_posts', 'posts', 'featured_posts', 'banner_advertisements'));
+        compact('categories','authors', 'category','entertainment_posts', 'posts', 'featured_posts', 'banner_advertisements'));
     }
     public function category(category $category){
         $categories = Category::all();
@@ -67,7 +67,7 @@ class FrontController extends Controller
         ->inRandomOrder()
         ->first();
 
-        return view('front.category', compact('categories','banner_advertisements','author'));
+        return view('front.author', compact('categories','banner_advertisments','author'));
     }
 }
 

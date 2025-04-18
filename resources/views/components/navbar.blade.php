@@ -6,7 +6,7 @@
         <div class="h-12 border border-[#E8EBF4]"></div>
         <form action="searchPage.html" class="w-[450px] flex items-center rounded-full border border-[#E8EBF4] p-[12px_20px] gap-[10px] focus-within:ring-2 focus-within:ring-[#FF6B18] transition-all duration-300">
             <button type="submit" class="flex w-5 h-5 shrink-0">
-                <img src="assets/images/icons/search-normal.svg" alt="icon" />
+                <img src="{{ asset('assets/images/logos/logos.PNG') }}" alt="Logo" style="width: 120px; height: auto;">
             </button>
             <input type="text" name="" id="" class="appearance-none outline-none w-full font-semibold placeholder:font-normal placeholder:text-[#A3A6AE]" placeholder="Search hot trendy news today..." />
         </form>
