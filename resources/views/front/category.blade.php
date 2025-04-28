@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,7 +34,7 @@
 					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
 					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
 						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
+							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-orange rounded-[50px]">
 							<p class="text-xs leading-[18px] font-bold uppercase">{{ $post->category->judul }}</p>
 						</div>
 						<img src="{{ Storage::url($post->thumbnail) }}" alt="thumbnail photo"
@@ -55,11 +54,11 @@
 	<section id="Advertisement" class="max-w-[1130px] mx-auto flex justify-center mt-[70px]">
 		<div class="flex flex-col gap-3 shrink-0 w-fit">
 			<a href="{{ $banner_advertisements->link }}">
-				<div class="w-[900px] h-[120px] flex shrink-0 border border-[#EEF0F7] rounded-2xl overflow-hidden">
+				<div class="w-[900px] h-[120px] flex shrink-0 border border-[#FF6B18] rounded-2xl overflow-hidden">
 					<img src="{{ Storage::url($banner_advertisements->thumbnail) }}" class="object-cover w-full h-full" alt="ads" />
 				</div>
 			</a>
-			<p class="font-medium text-sm leading-[21px] text-[#A3A6AE] flex gap-1">
+			<p class="font-medium text-sm leading-[21px] text-[#FF6B18] flex gap-1">
 				Our Advertisement <a href="#" class="w-[18px] h-[18px]"><img
 						src="{{ asset('assets/images/icons/message-question.svg') }}" alt="icon" /></a>
 			</p>
@@ -68,174 +67,3 @@
 </body>
 
 </html>
-			class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-			<div class="flex w-6 h-6 shrink-0">
-				<img src="assets/images/icons/status-up.svg" alt="icon" />
-			</div>
-			<span>Business</span>
-		</a>
-		<a href="categoryPage.html"
-			class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-			<div class="flex w-6 h-6 shrink-0">
-				<img src="assets/images/icons/car.svg" alt="icon" />
-			</div>
-			<span>Automotive</span>
-		</a>
-		<a href="categoryPage.html"
-			class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-			<div class="flex w-6 h-6 shrink-0">
-				<img src="assets/images/icons/global.svg" alt="icon" />
-			</div>
-			<span>Entertainment</span>
-		</a>
-		<a href="categoryPage.html"
-			class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-			<div class="flex w-6 h-6 shrink-0">
-				<img src="assets/images/icons/coffee.svg" alt="icon" />
-			</div>
-			<span>Foods</span>
-		</a>
-		<a href="categoryPage.html"
-			class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-			<div class="flex w-6 h-6 shrink-0">
-				<img src="assets/images/icons/courthouse.svg" alt="icon" />
-			</div>
-			<span>Politic</span>
-		</a>
-		<a href="categoryPage.html"
-			class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-			<div class="flex w-6 h-6 shrink-0">
-				<img src="assets/images/icons/cup.svg" alt="icon" />
-			</div>
-			<span>Sport</span>
-		</a>
-	</nav>
-	<section id="Category-result" class="max-w-[1130px] mx-auto flex items-center flex-col gap-[30px] mt-[70px]">
-		<h1 class="text-4xl leading-[45px] font-bold text-center">
-			Explore Our <br />
-			Entertainment News
-		</h1>
-		<div id="search-cards" class="grid grid-cols-3 gap-[30px]">
-			<a href="details.html" class="card">
-				<div
-					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">{{$post->category->judul}}</p>
-						</div>
-						<img src="" alt="{{storage::url($post->thumbnail) }}" alt="thumbnail photo"
-							class="object-cover w-full h-full" />
-					</div>
-					<div class="flex flex-col gap-[6px]">
-						<h3 class="text-lg leading-[27px] font-bold">{{ $post->judul }}</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">{{ $post->created_at->format('M d, Y') }}</p>
-					</div>
-				</div>
-			</a>
-			<a href="details.html" class="card">
-				<div
-					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-						</div>
-						<img src="assets/images/thumbnails/th-sunbathe.png" alt="thumbnail photo"
-							class="object-cover w-full h-full" />
-					</div>
-					<div class="flex flex-col gap-[6px]">
-						<h3 class="text-lg leading-[27px] font-bold">Terjadi demo pada ibu kota jakarta membuat macet
-							parah</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-					</div>
-				</div>
-			</a>
-			<a href="details.html" class="card">
-				<div
-					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-						</div>
-						<img src="assets/images/thumbnails/th-cyclist.png" alt="thumbnail photo"
-							class="object-cover w-full h-full" />
-					</div>
-					<div class="flex flex-col gap-[6px]">
-						<h3 class="text-lg leading-[27px] font-bold">Bersepeda dapat membuat diri menjadi lebih baik
-							lagi</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-					</div>
-				</div>
-			</a>
-			<a href="details.html" class="card">
-				<div
-					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-						</div>
-						<img src="assets/images/thumbnails/th-bulldozer.png" alt="thumbnail photo"
-							class="object-cover w-full h-full" />
-					</div>
-					<div class="flex flex-col gap-[6px]">
-						<h3 class="text-lg leading-[27px] font-bold">Bersepeda dapat membuat diri menjadi lebih baik
-							lagi</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-					</div>
-				</div>
-			</a>
-			<a href="details.html" class="card">
-				<div
-					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-						</div>
-						<img src="assets/images/thumbnails/th-key.png" alt="thumbnail photo"
-							class="object-cover w-full h-full" />
-					</div>
-					<div class="flex flex-col gap-[6px]">
-						<h3 class="text-lg leading-[27px] font-bold">Beberapa artis ini merayakan ultah di tengah hutan
-							raya</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-					</div>
-				</div>
-			</a>
-			<a href="details.html" class="card">
-				<div
-					class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-					<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-						<div
-							class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-							<p class="text-xs leading-[18px] font-bold">POLITIC</p>
-						</div>
-						<img src="assets/images/thumbnails/th-demonstration.png" alt="thumbnail photo"
-							class="object-cover w-full h-full" />
-					</div>
-					<div class="flex flex-col gap-[6px]">
-						<h3 class="text-lg leading-[27px] font-bold">Terjadi demo pada ibu kota jakarta membuat macet
-							parah</h3>
-						<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-					</div>
-				</div>
-			</a>
-		</div>
-	</section>
-	<section id="Advertisement" class="max-w-[1130px] mx-auto flex justify-center mt-[70px]">
-		<div class="flex flex-col gap-3 shrink-0 w-fit">
-			<a href="#">
-				<div class="w-[900px] h-[120px] flex shrink-0 border border-[#EEF0F7] rounded-2xl overflow-hidden">
-					<img src="assets/images/iklans/bannerWide1.png" class="object-cover w-full h-full" alt="ads" />
-				</div>
-			</a>
-			<p class="font-medium text-sm leading-[21px] text-[#A3A6AE] flex gap-1">
-				Our Advertisement <a href="#" class="w-[18px] h-[18px]"><img
-						src="assets/images/icons/message-question.svg" alt="icon" /></a>
-			</p>
-		</div>
-	</section>
-
